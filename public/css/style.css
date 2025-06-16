@@ -1,0 +1,198 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.site-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: #fff;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-menu .navbar-item {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #8ea1ee;
+}
+
+.navbar-menu .navbar-item:hover {
+    color: #007bff;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #007bff;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Profile Card Styles */
+.profile-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    max-width: 200px;
+    height: auto;
+    border-radius: 0;
+    margin: 0 auto 15px;
+    display: block;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card h2 {
+    margin: 15px 0 5px;
+    font-size: 22px;
+    color: #333;
+}
+
+.profile-card .title {
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #555;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Content Section Styles */
+.content-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.content-section h2 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin: 0 0 20px;
+    font-size: 24px;
+}
+
+.content-section h3 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+    color: #444;
+}
+
+/* News List Styles */
+.news-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.news-list li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.news-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.news-list .date {
+    font-weight: 600;
+    color: #007bff;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .profile-card, .content-section {
+        margin-bottom: 20px;
+    }
+    
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+}
