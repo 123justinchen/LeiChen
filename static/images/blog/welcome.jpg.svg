@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" version="1.1" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+ <rect width="800" height="400" fill="#f0f0f0"/>
+ <text x="400" y="200" text-anchor="middle" font-family="Arial" font-size="32" fill="#333">
+   Welcome to My Blog
+ </text>
+ <text x="400" y="240" text-anchor="middle" font-family="Arial" font-size="20" fill="#666">
+   A Place for Sharing Ideas and Experiences
+ </text>
+</svg>

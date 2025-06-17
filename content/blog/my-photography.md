@@ -1,6 +1,8 @@
 +++
 title = "My Photography"
-template = "page.html"
+date = 2023-06-15
+description = "A showcase of my photography work and experiences"
+featured_image = "images/blog/photography.jpg.svg"
 +++
 
 # My Photography

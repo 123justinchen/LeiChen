@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <article class="blog-post">
+                <h1 class="mb-3">{{ page.title }}</h1>
+                
+                <p class="text-muted mb-4">
+                    <small>
+                        {{ page.date | date(format="%B %d, %Y") }} • 
+                        {% set words = page.content | split(pat=" ") | length %}
+                        {% set reading_time = words / 200 | round | int %}
+                        {% if reading_time < 1 %}1{% else %}{{ reading_time }}{% endif %} min read
+                    </small>
+                </p>
+                
+                {% if page.extra.featured_image %}
+                <img src="{{ get_url(path=page.extra.featured_image) | safe }}" 
+                     alt="{{ page.title }}" 
+                     class="img-fluid rounded mb-4">
+                {% endif %}
+                
+                <div class="blog-content">
+                    {{ page.content | safe }}
+                </div>
+                
+                <div class="mt-5 border-top pt-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <a href="{{ get_url(path="blog") | safe }}" class="btn btn-outline-primary">&larr; Back to Blog</a>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <div class="share-buttons">
+                                <span class="me-2">Share:</span>
+                                <a href="https://twitter.com/intent/tweet?url={{ current_url | urlencode }}&text={{ page.title | urlencode }}"
+                                   target="_blank" rel="noopener noreferrer"
+                                   class="btn btn-sm btn-outline-primary me-1">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ current_url | urlencode }}"
+                                   target="_blank" rel="noopener noreferrer"
+                                   class="btn btn-sm btn-outline-primary me-1">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="mailto:?subject={{ page.title | urlencode }}&body=Check out this article: {{ current_url | urlencode }}"
+                                   class="btn btn-sm btn-outline-primary">
+                                    <i class="bi bi-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+{% endblock content %}
