@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://example.com/</loc>
+        <loc>https://leichen.netlify.app/</loc>
     </url>
     <url>
-        <loc>https://example.com/photography/</loc>
+        <loc>https://leichen.netlify.app/photography/</loc>
     </url>
     <url>
-        <loc>https://example.com/publications/</loc>
+        <loc>https://leichen.netlify.app/publications/</loc>
     </url>
     <url>
-        <loc>https://example.com/research/</loc>
+        <loc>https://leichen.netlify.app/research/</loc>
     </url>
     <url>
-        <loc>https://example.com/service/</loc>
+        <loc>https://leichen.netlify.app/service/</loc>
     </url>
     <url>
-        <loc>https://example.com/teaching/</loc>
+        <loc>https://leichen.netlify.app/teaching/</loc>
     </url>
     <url>
-        <loc>https://example.com/team/</loc>
+        <loc>https://leichen.netlify.app/team/</loc>
     </url>
 </urlset>
