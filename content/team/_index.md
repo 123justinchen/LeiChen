@@ -5,39 +5,16 @@ template = "page.html"
 
 # Team
 
-## Faculty
+## Collaborators
 
-### Lei Chen
-Professor
-Email: example@example.com
-Research interests: ...
+I am fortunate to collaborate with researchers across multiple disciplines. This page will be updated with details about my research group, collaborators, and students as my academic journey progresses.
 
-## PhD Students
+### Current Collaborations
 
-### Student 1
-Research focus: ...
-Email: student1@example.com
+- Optical and terahertz device fabrication
+- Quantum sensing and atomic magnetometers
+- Single-photon lidar systems
 
-### Student 2
-Research focus: ...
-Email: student2@example.com
+### Prospective Students
 
-## Master Students
-
-### Student 3
-Research focus: ...
-Email: student3@example.com
-
-### Student 4
-Research focus: ...
-Email: student4@example.com
-
-## Alumni
-
-### Former Student 1
-Graduated: 2020
-Current position: ...
-
-### Former Student 2
-Graduated: 2019
-Current position: ...
+If you are interested in joining my research, please get in touch at chenlei123123123@gmail.com.

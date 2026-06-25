@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="mb-4">{{ taxonomy.name | title }}</h1>
+            <div class="taxonomy-list">
+                {% for term in terms %}
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5>
+                            <a href="{{ term.permalink | safe }}">{{ term.name }}</a>
+                            <span class="badge bg-secondary ms-2">{{ term.pages | length }} post{{ term.pages | length | pluralize }}</span>
+                        </h5>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

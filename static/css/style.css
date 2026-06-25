@@ -185,14 +185,91 @@ footer p {
     color: #007bff;
 }
 
-/* Responsive Styles */
+/* Code Block Styles */
+pre {
+    background-color: #272822;
+    color: #f8f8f2;
+    border-radius: 6px;
+    padding: 16px;
+    overflow-x: auto;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 16px 0;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+}
+
+code {
+    background-color: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    color: #d63384;
+}
+
+/* Blog Content */
+.blog-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.blog-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+}
+
+.blog-content th,
+.blog-content td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.blog-content th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.blog-content h2 { margin-top: 1.5em; }
+.blog-content h3 { margin-top: 1.2em; }
+
+/* Badge styles for categories/tags */
+.badge.bg-primary { background-color: #007bff; }
+.badge.bg-secondary { background-color: #6c757d; }
+.badge.bg-light { background-color: #e9ecef; }
+
+/* Mobile Navigation */
 @media (max-width: 767px) {
     .profile-card, .content-section {
         margin-bottom: 20px;
     }
-    
+
     .profile-image {
         width: 150px;
         height: 150px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px 5%;
+    }
+
+    .navbar-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    .navbar-menu .navbar-item {
+        margin: 0 8px;
+        font-size: 14px;
     }
 }

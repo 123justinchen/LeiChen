@@ -5,15 +5,15 @@
     <div class="row">
         <div class="col-lg-8 mx-auto">
             <h1 class="mb-4">{{ section.title }}</h1>
-            
+
             {{ section.content | safe }}
-            
+
             <div class="blog-list mt-5">
                 {% for page in section.pages %}
                 <div class="card mb-4">
                     {% if page.extra.featured_image %}
-                    <img src="{{ get_url(path=page.extra.featured_image) | safe }}" 
-                         class="card-img-top" 
+                    <img src="{{ get_url(path=page.extra.featured_image) | safe }}"
+                         class="card-img-top"
                          alt="{{ page.title }}"
                          style="height: 200px; object-fit: cover;">
                     {% endif %}
@@ -23,12 +23,22 @@
                         </h2>
                         <p class="card-text text-muted">
                             <small>
-                                {{ page.date | date(format="%B %d, %Y") }} • 
+                                {{ page.date | date(format="%B %d, %Y") }} •
                                 {% set words = page.content | split(pat=" ") | length %}
                                 {% set reading_time = words / 200 | round | int %}
                                 {% if reading_time < 1 %}1{% else %}{{ reading_time }}{% endif %} min read
                             </small>
                         </p>
+                        {% if page.taxonomies.categories %}
+                        <p class="card-text">
+                            {% for cat in page.taxonomies.categories %}
+                            <span class="badge bg-primary me-1">{{ cat }}</span>
+                            {% endfor %}
+                            {% for tag in page.taxonomies.tags %}
+                            <span class="badge bg-secondary me-1">{{ tag }}</span>
+                            {% endfor %}
+                        </p>
+                        {% endif %}
                         {% if page.description %}
                         <p class="card-text">{{ page.description }}</p>
                         {% endif %}
