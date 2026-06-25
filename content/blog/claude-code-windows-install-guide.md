@@ -2,6 +2,9 @@
 title = "Windows 下 Claude Code 安装教程"
 date = 2026-06-25
 description = "从零开始，在 Windows 上安装 Git、Node.js、VS Code、Anaconda 和 Claude Code，并配置 DeepSeek API Key 的完整指南。"
+[taxonomies]
+categories = ["Tutorial"]
+tags = ["claude-code", "windows", "dev-tools"]
 [extra]
 featured_image = "images/j.png"
 +++
