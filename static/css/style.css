@@ -251,6 +251,16 @@ code {
 .blog-content h2 { margin-top: 1.5em; }
 .blog-content h3 { margin-top: 1.2em; }
 
+/* KaTeX display math */
+.katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 8px 0;
+}
+.katex-display > .katex {
+    text-align: center;
+}
+
 /* Badge styles for categories/tags */
 .badge.bg-primary { background-color: #007bff; }
 .badge.bg-secondary { background-color: #6c757d; }
