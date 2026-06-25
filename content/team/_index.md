@@ -1,20 +1,25 @@
 +++
-title = "Team"
+title = "Skills & Projects"
 template = "page.html"
 +++
 
-# Team
+# Skills & Projects
 
-## Collaborators
+## Claude Code Skills
 
-I am fortunate to collaborate with researchers across multiple disciplines. This page will be updated with details about my research group, collaborators, and students as my academic journey progresses.
+### [sector-paper-video](https://github.com/123justinchen/sector-paper-video)
+A股热门板块 → 中国科研论文 → 3分钟深度科普视频，全自动生成。不讲股票，只讲技术和产业。
 
-### Current Collaborations
+### [hfss-rf](https://github.com/123justinchen/hfss-rf)
+用 PyAEDT 驱动 HFSS 完成无源射频器件的建模、仿真与后处理，覆盖功分器、耦合器、滤波器、微带线等。
 
-- Optical and terahertz device fabrication
-- Quantum sensing and atomic magnetometers
-- Single-photon lidar systems
+## Other Projects
 
-### Prospective Students
+### [ansys-aedt-mcp](https://github.com/123justinchen/ansys-aedt-mcp)
+MCP server for Ansys Electronics Desktop automation with PyAEDT — HFSS, Maxwell, Q3D, Icepak, native AEDT APIs, reports, sweeps, and simulation workflows.
 
-If you are interested in joining my research, please get in touch at chenlei123123123@gmail.com.
+### [pyaedt-hfss-antenna](https://github.com/123justinchen/pyaedt-hfss-antenna)
+让 Agent 可以直接驱动你的 Ansys HFSS 进行天线仿真。
+
+### [journal-manager](https://github.com/123justinchen/journal-manager)
+Web-based academic journal scraper with Chinese translation.
