@@ -5,10 +5,10 @@
     <div class="row">
         <div class="col-lg-8 mx-auto">
             <h1 class="mb-4">{{ term.name }}</h1>
-            <p class="text-muted">{{ pages | length }} post{{ pages | length | pluralize }}</p>
+            <p class="text-muted">{{ term.pages | length }} post{{ term.pages | length | pluralize }}</p>
 
             <div class="blog-list mt-4">
-                {% for page in pages %}
+                {% for page in term.pages %}
                 <div class="card mb-3">
                     <div class="card-body">
                         <h5>
