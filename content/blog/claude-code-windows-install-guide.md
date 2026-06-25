@@ -5,8 +5,6 @@ description = "从零开始，在 Windows 上安装 Git、Node.js、VS Code、An
 [taxonomies]
 categories = ["Tutorial"]
 tags = ["claude-code", "windows", "dev-tools"]
-[extra]
-featured_image = "images/j.png"
 +++
 
 # Windows 下 Claude Code 安装教程
